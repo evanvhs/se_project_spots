@@ -20,8 +20,4 @@ Spots is an image sharing gallery site.
 
 - This webpage is deployed to Github Pages
 
-- Deployment Link:
-
-## Video Project Overview
-
-- Video Link:
+- [Deployment Link](https://evanvhs.github.io/se_project_spots/)
