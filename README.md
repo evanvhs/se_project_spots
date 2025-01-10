@@ -21,3 +21,7 @@ Spots is an image sharing gallery site.
 - This webpage is deployed to Github Pages
 
 - [Deployment Link](https://evanvhs.github.io/se_project_spots/)
+
+## Overview Video
+
+- [Video Link](https://drive.google.com/file/d/1X40gzw1FPQBOnAhGS4oOT1R1RR5L74ld/view?usp=sharing)
