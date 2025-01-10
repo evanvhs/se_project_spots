@@ -24,4 +24,4 @@ Spots is an image sharing gallery site.
 
 ## Overview Video
 
-- [Video Link](https://drive.google.com/file/d/1X40gzw1FPQBOnAhGS4oOT1R1RR5L74ld/view?usp=sharing)
+- [Video Link](https://drive.google.com/file/d/1_mGE_jct8ZQinj7-hjExMbYERtdn48_E/view?usp=sharing)
