@@ -50,13 +50,13 @@
   opacity: 100%;
 }
 
-.card__like-button_liked {
-  background-image: url(../images/like-icon-liked.svg);
+.card__like-btn_liked {
+  background: transparent url(../images/like-icon-liked.svg) center/contain
+    no-repeat;
   opacity: 1;
-  background-repeat: no-repeat;
 }
 
-.card__like-button_liked:hover {
+.card__like-btn_liked:hover {
   background-image: url(../images/like-icon-liked-hover.svg);
   opacity: 1;
 }

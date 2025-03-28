@@ -71,6 +71,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 function getCardElement(data) {
@@ -87,7 +88,14 @@ function getCardElement(data) {
   cardImageEl.alt = data.name;
 
   cardLikeBtn.addEventListener("click", () => {
-    cardLikeBtn.classList.toggle("card__like-button_liked");
+    cardLikeBtn.classList.toggle("card__like-btn_liked");
+  });
+
+  cardsList.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("card__delete-btn")) {
+      const card = evt.target.closest(".card");
+      card.remove();
+    }
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -100,23 +108,12 @@ function getCardElement(data) {
   return cardElement;
 }
 
-cardsList.addEventListener("click", (evt) => {
-  if (evt.target.classList.contains("card__delete-btn")) {
-    const card = evt.target.closest(".card");
-    card.remove();
-  }
-});
-
-previewModalCloseBtn.addEventListener("click", () => {
-  closeModal(previewModal);
-});
-
 function openModal(modal) {
-  modal.classList.add("modal__opened");
+  modal.classList.add("modal_opened");
 }
 
 function closeModal(modal) {
-  modal.classList.remove("modal__opened");
+  modal.classList.remove("modal_opened");
 }
 
 editModalBtn.addEventListener("click", () => {
@@ -124,15 +121,16 @@ editModalBtn.addEventListener("click", () => {
   editModalDescriptionInput.value = profileDescription.textContent;
   openModal(editModal);
 });
-editModalCloseBtn.addEventListener("click", () => {
-  closeModal(editModal);
+
+const closeButtons = document.querySelectorAll(".modal__close-btn");
+
+closeButtons.forEach((button) => {
+  const popup = button.closest(".modal");
+  button.addEventListener("click", () => closeModal(popup));
 });
 
 cardModalBtn.addEventListener("click", () => {
   openModal(cardModal);
-});
-cardModalCloseBtn.addEventListener("click", () => {
-  closeModal(cardModal);
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);

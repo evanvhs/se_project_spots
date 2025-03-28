@@ -15,7 +15,7 @@
   padding: 0 20px;
 }
 
-.modal__opened {
+.modal_opened {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.3s linear;
@@ -63,7 +63,7 @@
   opacity: 100%;
 }
 
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   background-image: url(../images/close-light.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   opacity: 40%;
 }
 
@@ -191,7 +191,7 @@
     max-width: 288px;
   }
 
-  .modal__close_type_preview {
+  .modal__close-btn_type_preview {
     top: -52.5px;
     right: 0px;
   }
