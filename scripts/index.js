@@ -91,11 +91,9 @@ function getCardElement(data) {
     cardLikeBtn.classList.toggle("card__like-btn_liked");
   });
 
-  cardsList.addEventListener("click", (evt) => {
-    if (evt.target.classList.contains("card__delete-btn")) {
-      const card = evt.target.closest(".card");
-      card.remove();
-    }
+  const deleteBtn = cardElement.querySelector(".card__delete-btn");
+  deleteBtn.addEventListener("click", () => {
+    cardElement.remove();
   });
 
   cardImageEl.addEventListener("click", () => {
