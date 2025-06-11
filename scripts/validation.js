@@ -59,10 +59,6 @@ const setEventListeners = (formEl, config) => {
 
   toggleButtonState(inputList, buttonElement, config);
 
-  formElement.addEventListener("reset", () => {
-    disableButton(buttonElement, config);
-  });
-
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
       checkInputValidity(formEl, inputElement, config);

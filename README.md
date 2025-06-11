@@ -1,4 +1,4 @@
-# Project 3: Spots
+# Project 3-6: Spots
 
 ## Overview/Description
 
@@ -8,9 +8,11 @@ Spots is an image sharing gallery site.
 
 - HTML
 - CSS
+- Javascript
 - Responsive Design
 - BEM
 - Grid
+- Validation
 
 ## Gif
 
@@ -21,7 +23,3 @@ Spots is an image sharing gallery site.
 - This webpage is deployed to Github Pages
 
 - [Deployment Link](https://evanvhs.github.io/se_project_spots/)
-
-## Overview Video
-
-- [Video Link](https://drive.google.com/file/d/1_mGE_jct8ZQinj7-hjExMbYERtdn48_E/view?usp=sharing)
